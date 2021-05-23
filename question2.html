@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Feelings</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<center>
+		<div class="top-bar">
+			<a href="welcome.html">Home</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<br><br>
+	<div>
+		<h1 id="heading"> Are you experiencing anger, emptiness, loss of interest and/or reduced concentration?</h1>
+	</div><br>
+
+  <div id="res">
+    <h2 id="symptoms" style="visibility:hidden; ">Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home. <br><br><br> Symptoms may include: irritability, anxiousness, loss of appetite, and feeling tired easily.<br><br><br> Treatments may include: Medication such as antidepressants, psychotherapy, self help through things such as regular exercise and good quality sleep.<br><br><br> Please ask a qualified healthcare provider if you are experiencing any of these symptoms.</h2>
+    <input onclick="myFunction()" class="button" type="submit" value="Yes"></a>
+    <a href="question3.html"><input class="button" type="submit" value="No"></a>
+
+
+
+    <br><br><br><br>
+    <a href="question3.html" style="visibility:hidden" id="next"><input class="button" type="submit" value="Next Question"></a>
+	</div>
+
+  
+  </center>
+  
+  <script>
+    function myFunction() {
+      document.getElementById("heading").innerHTML = "You may be experiencing depression.";
+      document.getElementById("res").style.visibility = "hidden";
+      document.getElementById("symptoms").style.visibility = "visible";
+      document.getElementById("next").style.visibility = "visible";
+    }
+</script>
+
+
+</body>
+
+</html>

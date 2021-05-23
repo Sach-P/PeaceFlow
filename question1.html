@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Feelings</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<center>
+		<div class="top-bar">
+			<a href="welcome.html">Home</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<br><br>
+	<div>
+		<h1 id="heading"> Are you experiencing aches and pains, headaches, and/or exhaustion?</h1>
+	</div><br>
+
+  <div id="res">
+    <h2 id="symptoms" style="visibility:hidden; ">Stress is emotional or physical tension and may come from something (an thought and/or event) that makes you feel frustrated or nervous. <br><br><br> Symptoms may include: Racing heart, weak immune systems, and muscle tension.<br><br><br> Please ask a qualified healthcare provider if you are experiencing any of these symptoms.</h2>
+    <input onclick="myFunction()" class="button" type="submit" value="Yes"></a>
+    <a href="question2.html"><input class="button" type="submit" value="No"></a>
+
+
+
+    <br><br><br><br>
+    <a href="question2.html" style="visibility:hidden" id="next"><input class="button" type="submit" value="Next Question"></a>
+	</div>
+
+  
+  </center>
+  
+  <script>
+    function myFunction() {
+      document.getElementById("heading").innerHTML = "You may be experiencing stress.";
+      document.getElementById("res").style.visibility = "hidden";
+      document.getElementById("symptoms").style.visibility = "visible";
+      document.getElementById("next").style.visibility = "visible";
+    }
+</script>
+
+
+</body>
+
+</html>

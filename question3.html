@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Anxiety</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<center>
+		<div class="top-bar">
+			<a href="welcome.html">Home</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<br><br>
+	<div>
+		<h1 id="heading"> Are you experiencing difficulty concentrating, fatigue and exhaustion, sweaty palms, and/or shaking?</h1>
+	</div><br>
+
+  <div id="res">
+    <h2 id="symptoms" style="visibility:hidden; ">Generalized anxiety disorder involves persistent and excessive worry that interferes with daily activities.<br><br><br> Symptoms may include: irritability, muscle tension, and difficulty sleeping. <br><br><br> Treatments may include: Psychotherapy, medications (to allieviate symptoms), joining support groups, and lowering caffiene intake.<br><br><br> Please ask a qualified healthcare provider if you are experiencing any of these symptoms.</h2>
+    <input onclick="myFunction()" class="button" type="submit" value="Yes"></a>
+    <a href="surveycomplete.html"><input class="button" type="submit" value="No"></a>
+
+
+
+    <br><br><br><br>
+    <a href="surveycomplete.html" style="visibility:hidden" id="next"><input class="button" type="submit" value="Finish"></a>
+	</div>
+
+  
+  </center>
+  
+  <script>
+    function myFunction() {
+      document.getElementById("heading").innerHTML = "You may be experiencing GAD (Generalized Anxiety Disorder).";
+      document.getElementById("res").style.visibility = "hidden";
+      document.getElementById("symptoms").style.visibility = "visible";
+      document.getElementById("next").style.visibility = "visible";
+    }
+</script>
+
+
+</body>
+
+</html>
